@@ -28,6 +28,7 @@ function drawPlayer1(p1_x, p1_y) {
 }
 
 function drawPlayer2(p1_x, p1_y) {
+  if(MouseEvent)
   rect (p1_x, p1_y, 10, 40);
 }
 
