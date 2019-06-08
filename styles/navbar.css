@@ -1,0 +1,38 @@
+.global-navbar {
+    height: 64px;
+    background: #121212;
+    line-height: 70px;
+}
+
+.gn-name-container {
+    padding-left: 30px;
+    float: left;
+}
+
+.gn-title-container {
+    float: right;
+    padding-right: 30px;
+}
+
+.image-container {
+    text-align: center;
+    height: inherit;
+}
+
+.image-container img {
+    height: inherit;
+    width: auto;
+}
+
+.gn-name, h1, h2, a {
+    color:#ECEFF1;
+    opacity: 87%; 
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.gn-title {
+    color:#ECEFF1;
+    opacity: 87%; 
+    font-size: 1.2em;
+}

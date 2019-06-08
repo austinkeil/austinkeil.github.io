@@ -59,7 +59,7 @@ class Ball {
         p1Score += 1;
         this.restart();
       }
-    } else if (this.x_pos <= p1.x_pos + PLAYER_WIDTH) {
+    } else if (this.x_pos <= PLAYER_WIDTH) {
       if (this.y_pos + BALL_HEIGHT > p1.y_pos && this.y_pos < p1.y_pos + PLAYER_HEIGHT) {
         this.x_dir *= -1 * RANDOMNESS;
         this.y_dir *= RANDOMNESS;

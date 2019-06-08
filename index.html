@@ -1,142 +1,53 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Austin's Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/navbar.css" rel="stylesheet" type="text/css" />
+<link href="styles/body.css" rel="stylesheet" type="text/css" />
 
-<style>
-
-html, body {
-    margin: 0;
-    padding: 0;
-    background: #263238;
-}
-
-.global-navbar {
-    height: 70px;
-    background: #121212;
-}
-
-.gn-container {
-    margin: 0 auto;
-}
-
-.gn-name-container {
-    position: absolute;
-    padding-left: 20px;
-    float: left;
-    line-height: 70px;
-    text-transform: uppercase;
-    font-size: 1.4em;
-}
-
-.gn-name, h1, h2, a {
-    color:#ECEFF1;
-    opacity: 87%; /*google material design*/
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
-.wrapper {
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  background: #263238;
-}
-
-.slide {
-  flex: 0 1 24%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10vh;
-  margin: 1em .5em 0em .5em;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #37474F;
-}
-
-.intro-wrapper {
-    width: 100%;
-    background: #263238;
-}
-</style>
+</head>
 
 <body>
     <!-- navigation bar -->
     <nav class="global-navbar">
-        <div class="gn-container">
-            <div class="gn-name-container">
-                <span class="gn-name">
-                    Austin Keil
-                </span>
-            </div>
+        <div class="gn-name-container">
+            <span class="gn-name">
+                { Austin Keil }
+            </span>
+        </div>
+        <div class="gn-title-container">
+            <span class="gn-title">
+                p5.js projects
+            </span>
+        </div>
+        <div class="image-container">
+            <img src="images/p5.png">
         </div>
     </nav>
 
-    <div class="intro-wrapper">
-        <div class="slide">
-            <h1>Welcome!</h1>
+    <div class="l-grid-container">
+        <div class="item item1">
+            <a href="pong/index.html">
+                1. Pong
+            </a>
         </div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+        <div class="item item11">11</div>
+        <div class="item item12">12</div>
+        <div class="item item13">13</div>
+        <div class="item item14">14</div>
+        <div class="item item15">15</div>
+        <div class="item item16">16</div>
     </div>
-
-
-    <!-- first row -->
-    <div class="wrapper">
-         <div class="slide a">
-             <div class="inner">
-                <a href="austinkeil.github.io/pong/">Pong</a>
-             </div>
-         </div>
-         <div class="slide b">
-             <div class="inner">
-                <h2>coming soon</h2>
-             </div>
-         </div>
-         <div class="slide c">
-             <div class="inner">
-                <h2>coming soon</h2>
-             </div>
-        </div>
-    </div>
-
-    <!-- second row -->
-    <div class="wrapper">
-            <div class="slide a">
-                <div class="inner">
-                    <h2>coming soon</h2>
-                </div>
-            </div>
-            <div class="slide b">
-                <div class="inner">
-                   <h2>coming soon</h2>
-                </div>
-            </div>
-            <div class="slide c">
-                <div class="inner">
-                   <h2>coming soon</h2>
-                </div>
-           </div>
-       </div>
-
-    <!-- third row -->
-    <div class="wrapper">
-            <div class="slide a">
-                <div class="inner">
-                    <h2>coming soon</h2>
-                </div>
-            </div>
-            <div class="slide b">
-                <div class="inner">
-                   <h2>coming soon</h2>
-                </div>
-            </div>
-            <div class="slide c">
-                <div class="inner">
-                   <h2>coming soon</h2>
-                </div>
-           </div>
-       </div>
 </body>
 
