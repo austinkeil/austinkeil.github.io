@@ -3,9 +3,10 @@ var lifespan = 400;
 var lifeP;
 var count = 0;
 var target;
-width = 400;
-height = 300;
+var width = 400;
+var height = 300;
 var maxForce = 0.2;
+var generation = 1;
 
 var rx = width / 5;
 var ry = height / 2;
@@ -19,19 +20,22 @@ function setup() {
   rocket = new Rocket();
   population = new Population();
   lifeP = createP();
+  generationP = createP();
   target = createVector(width/2, height/8);
 }
 
 function draw() {
   background(0);
   population.run();
-  lifeP.html(count);
+  lifeP.html("Frame (out of 400): " + count);
+  generationP.html("Generation: " + generation);
 
   count++;
   if (count == lifespan) {
     population.evaluate();
     population.selection();
     count = 0;
+    generation++;
   }
 
   fill(255);
